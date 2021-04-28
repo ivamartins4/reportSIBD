@@ -9,8 +9,3 @@ _(Descrever os tipos de utilizadores (actores) do sistema de informação e as f
 ---
 [< Previous](rei01.md) | [^ Main](https://github.com/exemploTrabalho/reportSIBD/) | [Next >](rei03.md)
 :--- | :---: | ---: 
-
-
-
-![An alternative description](images/image02.png) 
-Always add a description to help the user understand the figure 
