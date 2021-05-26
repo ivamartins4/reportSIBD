@@ -1,16 +1,40 @@
-# C3 : Interrogações à base de dados
+# C3 : SQL
 
-## Modelo E/A
-_(Apresentar uma secção, ou enumeração, por cada interrogação que é necessário efectuar à base de dados. Cada secção, ou enumeração, deve apresentar o título da interrogação, conter um parágrafo com a descrição e o respectivo código SQL.)_
+## DDL
 
-Exemplo de inserção de uma imagem:   
-![An alternative description](images/image02.png) 
-Always add a description to help the user understand the figure 
+_(Apresentar o SQL para criação do esquema definido acima num SGBD MySQL.)_
 
-NOTA: Cada entidade-tipo e cada associação devem ter um pequeno texto – um ou dois parágrafos – para descrever esse elemento do modelo e os seus atributos)
 
-## Regras de negócio adicionais (Restrições)
-_(Apresentar uma lista detalhada das regras e restrições não possíveis de representar no modelo E/A, que visam a manutenção da consistência e integridade da modelação do problema)_
+```sql
+USE `test`;
+
+DROP TABLE IF EXISTS `tabela_a`;
+DROP TABLE IF EXISTS `tabela_b`;
+
+CREATE TABLE IF NOT EXISTS `tabela_a` (
+  `model` int(4) unsigned NOT NULL,
+  `speed` int(4) unsigned NOT NULL,
+  `ram` int(3) unsigned NOT NULL,
+  `hd` float unsigned NOT NULL,
+  `screen` float unsigned NOT NULL,
+  `price` int(7) NOT NULL,
+  PRIMARY KEY (`model`)
+);
+
+CREATE TABLE IF NOT EXISTS `tabela_b` (
+  `model` int(4) unsigned NOT NULL,
+  `speed` int(4) unsigned NOT NULL,
+  `ram` int(3) unsigned NOT NULL,
+  `hd` float unsigned NOT NULL,
+  `cd` varchar(3) COLLATE latin1_bin NOT NULL,
+  `price` int(7) NOT NULL,
+  PRIMARY KEY (`model`)
+);
+```
+
+## DML
+
+_(Apresentar exemplos dos pedidos SQL à base de dados que demonstrem o cumprimento dos requisitos identificados. Para cada query apresentar numa breve descrição do requisito que pretende resolver e do resultado espectável.)_
 
 ---
 [< Previous](rebd04.md) | [^ Main](https://github.com/exemploTrabalho/reportSIBD/) | Next >
