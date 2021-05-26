@@ -1,4 +1,4 @@
-# Relatório de Especificação da Informação
+# Relatório de Especificação da Base de Dados
 
 ## Índice
 
