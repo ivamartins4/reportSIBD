@@ -31,12 +31,10 @@ _Did you use any aditional libraries? Describe them here._
 * Loopback 4
 
 ## Reports
-_Please add at least a hyperlink per Report. But you can add more, for example for the individual report chapters._
+_Please add a hyperlink per Report.
 
-### REI
-* [REI](doc/rei/rei00.md)
-### REBD 
-* [REBD](doc/rebd/rebd00.md)
+:[REI](doc/rei/rei00.md)
+:[REBD](doc/rebd/rebd00.md)
 
 ## Team
 * Marco Amaro Oliveira [@MarcoOliveira](https://github.com/marcoamarooliveira)
